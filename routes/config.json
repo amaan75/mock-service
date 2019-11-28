@@ -1,0 +1,29 @@
+[
+    {
+        "method": "GET",
+        "successResponse": [
+            {
+                "data": {
+                    "contentType": "str",
+                    "createdTime": 0,
+                    "dealerId": "str",
+                    "mediaId": "str",
+                    "mediaSize": 0,
+                    "objectURL": "str",
+                    "originalFileName": "str",
+                    "tenantId": "str"
+                },
+                "status": "success"
+            }
+        ],
+        "failCode": 500,
+        "successCode": 200,
+        "failureResponse": [],
+        "path": "/media/w/u/upload/from/url/single",
+        "failRate": 2,
+        "responseTimes": [
+            30000,
+            1000
+        ]
+    }
+]
