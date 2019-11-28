@@ -3,3 +3,5 @@
  - while in this folder, type npm install
  - then run this from the same folder
  ``` DEBUG=mock-ser:* npm start ```
+
+  <b> oh and make sure to setup your apis, using the config file :D

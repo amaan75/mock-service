@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www ./routes/config.json"
+    "start": "nodemon ./bin/www ./config.json"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
