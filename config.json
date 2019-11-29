@@ -20,7 +20,7 @@
         "successCode": 200,
         "failureResponse": [],
         "path": "/media/w/u/upload/from/url/single",
-        "failRate": 2,
+        "failRate": 0,
         "responseTimes": [
             30000,
             1000

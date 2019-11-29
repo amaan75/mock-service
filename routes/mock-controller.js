@@ -8,7 +8,7 @@ const randomInt = function (max) {
 };
 
 const isFail = (failRate) => {
-    return failRate <= randomInt(10);
+    return failRate > randomInt(10);
 }
 const sleep = (millis) => {
     return new Promise(resolve => setTimeout(resolve, millis));
