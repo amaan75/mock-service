@@ -1,13 +1,39 @@
 [
     {
-        "method": "GET",
+        "method": "POST",
         "successResponse": [
             {
                 "data": {
                     "contentType": "str",
                     "createdTime": 0,
                     "dealerId": "str",
-                    "mediaId": "str",
+                    "mediaId": "MEDIAID1",
+                    "mediaSize": 0,
+                    "objectURL": "str",
+                    "originalFileName": "str",
+                    "tenantId": "str"
+                },
+                "status": "success"
+            },
+            {
+                "data": {
+                    "contentType": "str",
+                    "createdTime": 0,
+                    "dealerId": "str",
+                    "mediaId": "MEDIAID2",
+                    "mediaSize": 0,
+                    "objectURL": "str",
+                    "originalFileName": "str",
+                    "tenantId": "str"
+                },
+                "status": "success"
+            },
+            {
+                "data": {
+                    "contentType": "str",
+                    "createdTime": 0,
+                    "dealerId": "str",
+                    "mediaId": "MEDIAID3",
                     "mediaSize": 0,
                     "objectURL": "str",
                     "originalFileName": "str",
@@ -20,10 +46,137 @@
         "successCode": 200,
         "failureResponse": [],
         "path": "/media/w/u/upload/from/url/single",
-        "failRate": 0,
+        "failRate": -1,
         "responseTimes": [
-            30000,
-            1000
+            10000
+        ]
+    },
+    {
+        "method": "GET",
+        "successResponse": [
+            {
+                "data": "mockMACID",
+                "status": "success"
+            }
+        ],
+        "failCode": 500,
+        "successCode": 200,
+        "failureResponse": [],
+        "path": "/settings/u/scanner/:department",
+        "failRate": -1,
+        "responseTimes": [
+            0
+        ]
+    },
+    {
+        "method": "POST",
+        "successResponse": [
+            {
+                "requestId": "request1",
+                "jobId": "request1",
+                "status": true,
+                "reason": "str",
+                "url": [
+                    "str"
+                ],
+                "packetType": "str",
+                "response": "str"
+            }
+        ],
+        "failCode": 400,
+        "successCode": 200,
+        "failureResponse": [
+            {
+                "msg": "Missing tenant or dealer or macid details - BY UMA"
+            }
+        ],
+        "path": "/v2/scan",
+        "failRate": 9,
+        "responseTimes": [
+            0
+        ]
+    },
+    {
+        "method": "GET",
+        "successResponse": [
+            {
+                "failureCode": "str",
+                "failureReason": "str",
+                "scannerError": "str",
+                "status": "Completed",
+                "url": [
+                    "str"
+                ]
+            }
+        ],
+        "failCode": 200,
+        "successCode": 200,
+        "failureResponse": [
+            {
+                "failureCode": "str",
+                "failureReason": "str",
+                "scannerError": "str",
+                "status": "Failed",
+                "url": [
+                    "str"
+                ]
+            }
+        ],
+        "path": "/v2/scan/:jobId/status",
+        "failRate": -1,
+        "responseTimes": [
+            0
+        ]
+    },
+    {
+        "method": "POST",
+        "successResponse": [
+            {
+                "data": [
+                    {
+                        "mediaId": "str",
+                        "responseMap": {
+                            "contentType": "str",
+                            "url": "str"
+                        }
+                    }
+                ],
+                "status": "success"
+            }
+        ],
+        "failCode": 500,
+        "successCode": 200,
+        "failureResponse": [],
+        "path": "/media/r/u/presignedurls",
+        "failRate": -1,
+        "bulk": false,
+        "responseTimes": [
+            0
+        ]
+    },
+    {
+        "method": "POST",
+        "successResponse": [
+            {
+                "data": {
+                    "10e7c662dae4_2": {
+                        "meta": {
+                            "code": 2,
+                            "msg": "Failed: Invalid payload parameter received, Failed: Printer is offline."
+                        },
+                        "id": null
+                    }
+                },
+                "status": "success"
+            }
+        ],
+        "failCode": 500,
+        "successCode": 200,
+        "failureResponse": [],
+        "path": "/pms/u/v1/bulk/easyprint",
+        "failRate": -1,
+        "responseTimes": [
+            0
         ]
     }
 ]

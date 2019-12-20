@@ -32,7 +32,8 @@ const controller = (express, config = []) => {
 
             const responseIndexToSend = randomInt(responseArray.length);
             // console.log(responseArray);
-            const responseToSend = responseArray[responseIndexToSend] || { "status": "failed", "data": "check config" };
+
+            const responseToSend = routeConfig.bulk ? responseArray : responseArray[responseIndexToSend] || { "status": "failed", "data": "check config" };
             console.log("sending response ", responseToSend)
             const responseTimeIndex = randomInt(routeConfig.responseTimes.length);
             // console.log("response time index", responseTimeIndex)
