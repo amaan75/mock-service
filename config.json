@@ -178,5 +178,79 @@
         "responseTimes": [
             0
         ]
+    },
+    {
+        "method": "GET",
+        "successResponse": [
+            {
+                "meta": {
+                    "code": 0,
+                    "message": "success"
+                },
+                "response": [
+                    {
+                        "tenant_id": "stg-cacargroup",
+                        "dealer_id": "4",
+                        "name": "Fujitsu Scanner San Ramon Office",
+                        "mac_id": "b827ebf4e98c",
+                        "ip_address": "",
+                        "model": "Dunno",
+                        "make": "Fujitsu",
+                        "type": null,
+                        "status": "down",
+                        "server_id": ""
+                    },
+                    {
+                        "tenant_id": "stg-cacargroup",
+                        "dealer_id": "4",
+                        "name": "brother_6900",
+                        "mac_id": "8439be680b11",
+                        "ip_address": "",
+                        "model": "",
+                        "make": "",
+                        "type": null,
+                        "status": "down",
+                        "server_id": ""
+                    },
+                    {
+                        "tenant_id": "stg-cacargroup",
+                        "dealer_id": "4",
+                        "name": "Brother_3600",
+                        "mac_id": "3c:2a:f4:93:2a:21",
+                        "ip_address": "10.250.0.4",
+                        "model": "ADS-3600W",
+                        "make": "Brother",
+                        "type": [
+                            "adf"
+                        ],
+                        "status": "down",
+                        "server_id": "px1"
+                    },
+                    {
+                        "tenant_id": "stg-cacargroup",
+                        "dealer_id": "4",
+                        "name": "Brother_6900_Bill_e152",
+                        "mac_id": "3c:2a:f4:b0:e1:52",
+                        "ip_address": "10.250.0.36",
+                        "model": "MFC-L6900DW",
+                        "make": "Brother",
+                        "type": [
+                            "afd",
+                            "flatbed"
+                        ],
+                        "status": "down",
+                        "server_id": "px1"
+                    }
+                ]
+            }
+        ],
+        "failCode": 500,
+        "successCode": 200,
+        "failureResponse": [],
+        "path": "/tekioncloudscan/scanner",
+        "failRate": -1,
+        "responseTimes": [
+            0
+        ]
     }
 ]
